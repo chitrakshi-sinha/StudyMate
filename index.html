@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyMate - Study Task Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 StudyMate</h1>
+        <p>Your personal study task and deadline tracker</p>
+    </header>
+
+    <main>
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h2 id="totalTasks">0</h2>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="completedTasks">0</h2>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="pendingTasks">0</h2>
+                <p>Pending</p>
+            </div>
+
+        </section>
+
+
+        <!-- Add Task -->
+        <section class="form-section">
+
+            <h2>Add a Study Task</h2>
+
+            <form id="taskForm">
+
+                <label for="taskName">Task Name</label>
+                <input
+                    type="text"
+                    id="taskName"
+                    placeholder="Example: Complete Physics assignment"
+                    required
+                >
+
+                <label for="subject">Subject</label>
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Example: Physics"
+                    required
+                >
+
+                <label for="deadline">Deadline</label>
+                <input
+                    type="date"
+                    id="deadline"
+                    required
+                >
+
+                <label for="priority">Priority</label>
+
+                <select id="priority">
+                    <option value="High">High</option>
+                    <option value="Medium" selected>Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+
+                <button type="submit">
+                    + Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Task List -->
+        <section class="tasks-section">
+
+            <h2>My Study Tasks</h2>
+
+            <div id="taskList"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>StudyMate © 2026 | Built using HTML, CSS and JavaScript</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
