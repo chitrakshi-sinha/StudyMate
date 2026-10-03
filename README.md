@@ -42,3 +42,5 @@ Some features that could be added in future versions include:
 * Dark mode
 * User accounts and cloud storage
 * Progress charts and study statistics
+
+
